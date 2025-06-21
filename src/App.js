@@ -17,7 +17,7 @@ function App() {
     <Nav/>
     <MainSection/>
     <Banner/>
-    <img src="/assets/pic2.png" style={{
+    <img src={`${process.env.PUBLIC_URL}/assets/pic2.png`} style={{
           width: "100%",         
           height: "auto",     
           display: "block",      

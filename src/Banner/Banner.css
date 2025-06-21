@@ -1,0 +1,89 @@
+/* Banner Container */
+.banner-container {
+    background-color: #F1E7DF;
+    color: #48423E;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+
+/* Marquee Wrapper */
+.marquee {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+/* Marquee Content */
+.marquee-content {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    animation: marquee-scroll 30s linear infinite;
+}
+
+/* Marquee Animation */
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-content hr {
+    width: 40px;
+    height: 1px;
+    background-color: #48423E;
+    border: none;
+    margin: 0 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .banner-container {
+        font-size: 0.9rem; /* Slightly smaller font */
+        padding: 8px 0;
+    }
+    .marquee-content {
+        animation: marquee-scroll 30s linear infinite; /* Faster for medium screens */
+    }
+    .marquee-content hr {
+        width: 30px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-container {
+        font-size: 0.75rem; /* Slightly smaller font */
+        padding: 6px 0;
+    }
+    .marquee-content {
+        animation: marquee-scroll 30s linear infinite; /* Faster scroll for small screens */
+    }
+    .marquee-content hr {
+        width: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-container {
+        font-size: 0.5rem;
+        padding: 4px 0;
+    }
+    .marquee-content {
+        animation: marquee-scroll 30s linear infinite;
+    }
+    .marquee-content hr {
+        width: 20px;
+    }
+}

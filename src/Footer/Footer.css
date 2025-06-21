@@ -1,0 +1,134 @@
+.footer{
+    font-family: "Inter";
+    color: #48423E;
+    margin-top: 20px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 150px;
+    padding-left: 50px;
+}
+
+.footer-links ul{
+    list-style: none;
+    text-align: left;
+}
+
+.footer-links li{
+    padding: 10px;
+}
+
+.footer-logo{
+    font-style: italic;
+    font-size: 24px;
+    white-space: nowrap;
+    font-weight: 200;
+}
+
+.footer-heading{
+    font-weight: 300;
+}
+
+.footer-item{
+    font-weight: 400;
+}
+
+.footer-cond{
+    display: flex;
+    font-size: 12px;
+    gap:400px;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px;
+    text-align: left;
+    color: #48423E;
+  }
+  
+  .form p {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .form div {
+    position: relative;
+    width: 100%;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 12px 40px 12px 12px; 
+    border-radius: 10px;
+    background-color: #F7F1EC;
+    border: 1px solid #48423E;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .form input::placeholder {
+    color: #48423E; 
+    opacity: 1; 
+  }
+  
+  
+  .form button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 30px;
+      padding-left: 20px;
+    }
+  
+    .footer-cond {
+      gap: 50px;
+      flex-direction: column;
+      font-size: 11px;
+    }
+  
+    .form {
+      margin: 30px 20px;
+    }
+  }
+  
+  /* For mobile (<= 480px) */
+  @media (max-width: 480px) {
+    .footer-logo {
+      font-size: 20px;
+    }
+  
+    .form p {
+      font-size: 18px;
+    }
+  
+    .form input {
+      font-size: 14px;
+    }
+  
+    .form button {
+      font-size: 16px;
+    }
+  
+    .footer-cond {
+      gap: 20px;
+      font-size: 10px;
+      justify-content: flex-start;
+      text-align: left;
+    }
+  }
+  

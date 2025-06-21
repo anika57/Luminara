@@ -1,0 +1,157 @@
+/* Navigation Bar */
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #48423E;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    z-index: 10000;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+/* Logo */
+.logo {
+    font-style: italic;
+    font-size: 24px;
+    white-space: nowrap; /* Prevents text breaking */
+}
+
+/* Menu Icon (Mobile Only) */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Navigation Items */
+.nav-items {
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    list-style: none;
+    flex-wrap: wrap; /* Ensures proper alignment on small screens */
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-items li {
+    cursor: pointer;
+    white-space: nowrap; /* Ensures items stay on one line */
+}
+
+.nav-items li:hover {
+    transform: scale(1.05);
+    color: #724f37;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Navigation Icons */
+.nav-icons {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.nav-icons svg {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover Effect */
+.nav-icons svg:hover {
+    transform: scale(1.1);
+    color: #724f37;
+}
+
+
+/* 📌 Responsive Adjustments */
+
+/* Tablet View */
+@media (max-width: 1024px) {
+    .nav-items {
+        gap: 20px;
+        font-size: 16px;
+    }
+    
+    /* Adjust Icon Size */
+    .nav-icons svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Show Menu Icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hide Nav Items by Default */
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* Show Nav Items When Menu is Open */
+    .nav-items.active {
+        display: flex;
+    }
+
+    .nav-items li {
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    /* Adjust Icon Size */
+    .nav-icons svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-items {
+        font-size: 14px;
+    }
+
+    .nav-icons {
+        gap: 8px;
+    }
+
+    /* Adjust Icon Size */
+    .nav-icons svg {
+        width: 20px;
+        height: 20px;
+    }
+}

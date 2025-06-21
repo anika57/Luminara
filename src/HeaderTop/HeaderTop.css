@@ -1,0 +1,32 @@
+/* Header Top */
+.header-top {
+  background-color: black;
+  color: white;
+  text-align: center; /* Ensures content is centered */
+  padding: 5px 10px; /* Consistent padding */
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1rem; /* Responsive font size */
+}
+
+/* 📌 Responsive Media Queries */
+@media (max-width: 1024px) { /* Tablets */
+  .header-top {
+      font-size: 0.9rem; /* Slightly smaller text */
+      padding: 6px 8px;
+  }
+}
+
+@media (max-width: 768px) { /* Mobile Devices */
+  .header-top {
+      font-size: 0.8rem; /* Reduce text size */
+      padding: 5px 6px;
+  }
+}
+
+@media (max-width: 480px) { /* Small Phones */
+  .header-top {
+      font-size: 0.75rem; /* Even smaller for compact view */
+      padding: 4px 5px;
+  }
+}

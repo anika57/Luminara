@@ -7,7 +7,7 @@ function InfoSec() {
         <div className="info-sec">
             <div className="info-sec-1">
                 <div className="info-sec-img">
-                    <img src="/assets/hand.png"/>
+                    <img src={`${process.env.PUBLIC_URL}/assets/hand.png`}/>
                 </div>
                 <div className="info-sec-text">
                     <p className="info-heading">ACHIEVE RADIANT HANDS WITH LUMINARA</p>
@@ -26,7 +26,7 @@ function InfoSec() {
                     </div>
                 </div>
                 <div className="info-sec-img">
-                    <img src="/assets/face.png"/>
+                    <img src={`${process.env.PUBLIC_URL}/assets/face.png`}/>
                 </div>
             </div>
         </div>

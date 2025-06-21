@@ -5,7 +5,7 @@ function HeroBanner() {
   return (
     <div className="hero-container">
       <div className="hero-image">
-        <img src="/assets/face-pic.png" alt="Hero Banner" />
+        <img src= `${process.env.PUBLIC_URL}/assets/face-pic.png` alt="Hero Banner" />
       </div>
       <div className="hero-content">
         <div className="hero-text">

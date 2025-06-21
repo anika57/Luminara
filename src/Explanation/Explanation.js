@@ -32,19 +32,19 @@ function Explanation() {
         id:"001",
         title:"Stay Hydrated & Glowy",
         content:"Infused with skin-loving ingredients to deeply hydrate and enhance your natural radiance, day and night.",
-        image:"/assets/face-mask.png",
+        image:`${process.env.PUBLIC_URL}/assets/face-mask.png`,
     },
     {   
         id:"002",
         title:"Your New Bedtime Ritual",
         content:"Nourish, repair, and rejuvenate your skin overnight for a fresh, glowing complexion by morning.",
-        image:"/assets/bedtime.png",
+        image:`${process.env.PUBLIC_URL}/assets/bedtime.png`,
     },
     {
         id:"003",
         title:"Hydro-Melt Glow Capsules",
         content:"A concentrated blend of hydration and nutrients that melt into your skin, leaving it soft, plump, and luminous.",
-        image:"/assets/capsule.png",
+        image:`${process.env.PUBLIC_URL}/assets/capsule.png`,
     },
   ]
 

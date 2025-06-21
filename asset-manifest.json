@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Luminara/static/css/main.6929e7f1.css",
-    "main.js": "/Luminara/static/js/main.77ca268e.js",
+    "main.js": "/Luminara/static/js/main.a92cac8d.js",
     "static/js/453.9e9c29d8.chunk.js": "/Luminara/static/js/453.9e9c29d8.chunk.js",
     "index.html": "/Luminara/index.html",
     "main.6929e7f1.css.map": "/Luminara/static/css/main.6929e7f1.css.map",
-    "main.77ca268e.js.map": "/Luminara/static/js/main.77ca268e.js.map",
+    "main.a92cac8d.js.map": "/Luminara/static/js/main.a92cac8d.js.map",
     "453.9e9c29d8.chunk.js.map": "/Luminara/static/js/453.9e9c29d8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6929e7f1.css",
-    "static/js/main.77ca268e.js"
+    "static/js/main.a92cac8d.js"
   ]
 }

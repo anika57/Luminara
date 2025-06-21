@@ -72,7 +72,7 @@ function Explanation() {
                 <div className="faq-heading" onClick={() => toggleFAQ(index)}>
                   <p>{item.title}</p>
                   <img
-                    src={openIndex === index ? "/assets/down-arrow.png" : "/assets/up-arrow.png"}
+                    src={openIndex === index ? "./assets/down-arrow.png" : "/assets/up-arrow.png"}
                     alt="Toggle Icon"
                   />
                 </div>
@@ -87,7 +87,7 @@ function Explanation() {
         <div className="faq"><hr /></div>
         </ul>
         <div className="exp-image">
-          <img src="/assets/hand-oil.png" alt="Hand with Oil" />
+          <img src="./assets/hand-oil.png" alt="Hand with Oil" />
         </div>
     </div>
     <div className="points">

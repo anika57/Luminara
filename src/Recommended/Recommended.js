@@ -14,41 +14,41 @@ function Recommended() {
             </div>
             <div className="recommended-pick-list">
                 <ul>
-                    <li className="product"><img className="image" src="/assets/recommended-pick-1.png"/>
+                    <li className="product"><img className="image" src={`${process.env.PUBLIC_URL}/assets/recommended-pick-1.png`}/>
                         <div className="product-text-reco">
                             <div>BOUNCY & FIRM SLEEP...</div>
                             <div className="price">₹240.99</div>
                         </div>
                         <div className="reviews">
-                            <div className="reviews-img"><img src="/assets/rating.png"/></div>
+                            <div className="reviews-img"><img src={`${process.env.PUBLIC_URL}/assets/rating.png/`} /></div>
                             <div className="reviews-text">15.3K Reviews</div>
                         </div>
                     </li>
-                    <li className="product"><img className="image" src="/assets/recommended-pick-2.png"/>                        
+                    <li className="product"><img className="image" src={`${process.env.PUBLIC_URL}/assets/recommended-pick-2.png`}/>                        
                         <div className="product-text-reco">
                             <div>CREAM SKIN</div>
                             <div className="price">₹240.99</div>
                         </div>
                         <div className="reviews">
-                            <div className="reviews-img"><img src="/assets/rating.png"/></div>
+                            <div className="reviews-img"><img src={`${process.env.PUBLIC_URL}/assets/rating.png`}/></div>
                             <div className="reviews-text">15.3K Reviews</div>
                         </div>
                     </li>
-                    <li className="product"><img className="image" src="/assets/recommended-pick-3.png"/>
+                    <li className="product"><img className="image" src={`${process.env.PUBLIC_URL}/assets/recommended-pick-3.png`}/>
                         <div className="product-text-reco">
                             <div>BOUNCY & FIRM MASK</div>
                             <div className="price">₹240.99</div>
                         </div>
                         <div className="reviews">
-                            <div className="reviews-img"><img src="/assets/rating.png"/></div>
+                            <div className="reviews-img"><img src={`${process.env.PUBLIC_URL}/assets/rating.png`}/></div>
                             <div className="reviews-text">15.3K Reviews</div>
                         </div>
                     </li>
                 </ul>
             </div>
                 <div className="arrow-buttons">
-                    <button><img src="/assets/left.png"/></button>
-                    <button><img src="/assets/right1.png"/></button>
+                    <button><img src={`${process.env.PUBLIC_URL}/assets/left.png`}/></button>
+                    <button><img src={`${process.env.PUBLIC_URL}/assets/right1.png`}/></button>
                 </div>
         </div>
       </div>
